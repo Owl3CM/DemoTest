@@ -1,0 +1,9 @@
+.processing-container{
+    background-color: var(--blur);
+    z-index: 99999999;
+}
+.loading-container{
+    z-index: 99999999;
+    pointer-events: none;
+    touch-action: none;
+}

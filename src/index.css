@@ -1,0 +1,211 @@
+@import url('./styles/root.css');
+@import url('./styles/containers.css');
+@import url('./styles/elements.css');
+@import url('./styles/index.css');
+
+@font-face {font-family: "'BoutrosMBCDinkum Medium'";src: url('../fonts/light.ttf');}
+@font-face {font-family: "'GE Dinkum Medium'";src: url("../fonts/bold.ttf");}
+:root{
+    --font-light:"'GE Dinkum Medium'";
+    --font-bold:"'BoutrosMBCDinkum Medium'";
+}
+
+a{
+    text-decoration: none;
+    color: var(--owl);
+}
+
+.chat{
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px rgb(45, 48, 62,0.15);
+}
+
+.dark .chat{
+    background-color: #2d303e;
+}
+
+.chat p {
+    font-family: "'Yekan Bakh'";
+    color: #1f1d2b;
+}
+
+.chat img{
+    border-radius:25px 0 25px 25px;
+    max-height: 500px;
+    /* max-height: 10%; */
+}
+ 
+
+.chat-container-owner{
+    max-width: 80%;
+    align-self: flex-start;
+    border-radius:25px 0 25px 25px;
+}
+
+.chat-container-ownerImage{
+    padding:0;
+    max-width: 80%;
+    align-self: flex-start;
+    border-radius:25px 0 25px 25px;
+}
+.chat-container-ownerAudio{
+    padding:0;
+    align-self: flex-start;
+    border-radius:25px 0 25px 25px;
+}
+
+.chat-container-replier{
+    max-width: 80%;
+    align-self: flex-end;
+    background-color: #e3353d;
+    border-radius: 0 25px  25px 25px;
+}
+
+.chat-container-replier p{
+        color: #ffffff;
+}
+
+/* .dark .chat-container-replier{
+    border-top-left-radius:0;
+    max-width: 70%;
+    align-self: flex-end;
+    background-color: #6a6a6a;
+} */
+
+
+.svg-drop-shdow {
+  filter: drop-shadow(0px 5px 2px rgb(0 0 0 / 0.5));
+}
+.dark .svg-drop-shdow {
+   fill: #474B60;
+  }
+  
+
+.stroke-drop-shdow{
+  filter: drop-shadow(0px -6px 1px #d9dddd);
+  stroke:#eff3f3 ;
+  fill: #eff3f3;
+}
+.dark .stroke-drop-shdow{
+  filter: none;
+  stroke:#474B60 ;
+  fill: #474B60;
+}
+
+
+.squiggle {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 650;
+  animation: draw 1.6s linear infinite;
+  filter: drop-shadow( 0px 0px 15px #e7353c);
+}
+
+@keyframes draw {
+  0% {
+    stroke-dashoffset: 1300;
+  }
+  50% {
+    stroke-dashoffset: 650;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.bottom-popup{
+  position: fixed;
+  bottom: -12px;
+  right: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding:10px;
+  padding-bottom: 22px;
+  animation: bottom-popup-keyframes 300ms ease-in-out ;
+}
+ @keyframes bottom-popup-keyframes {0% {bottom: -300px;}100% {bottom: -12px;}}
+
+  /* Svg Status */
+  .svg-stuats-container{
+    max-height: 300px;
+    margin-top: 100px;
+    animation:  fade-in-svg-frame 500ms ease-out ;
+  }
+  .svg-stuats-container .card-1
+  {
+    animation: card-1-farme 500ms ease-out ;
+    transform: translateX(0px);
+  }
+  
+  @keyframes card-1-farme {
+    0% {
+      transform: translateX(-100px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }  
+ 
+  .svg-stuats-container .card-2
+  {
+    animation: card-2-farme 500ms ease-out ;
+    transform: translateX(0px);
+  }
+  
+  @keyframes card-2-farme {
+    0% {
+      transform: translateX(100px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+ 
+  @keyframes fade-in-svg-frame {
+    0%{
+      opacity: 0.5;
+    }
+    100%{
+      opacity:1;
+    }
+  }
+
+  .ticket-popup{
+    width: 100%;
+    max-width: 450px;
+  }
+  
+  .svg-stuats-container .col-0{fill: #efefef;}
+  .dark .svg-stuats-container .col-0{fill: #30303c;}
+
+  .svg-stuats-container .col-1{fill: #ffffff;}
+  .dark .svg-stuats-container .col-1{fill: #3e3e4a;}
+
+  .svg-stuats-container .col-card{fill: #ffffff;}
+  .dark .svg-stuats-container .col-card{fill: #4e4c5a;}
+  
+  .svg-stuats-container .col-2{fill: #6a6a6a;}
+  .dark .svg-stuats-container .col-2{fill: #3e3e4a;}
+
+  .svg-stuats-container .col-3{fill: #cbcbca;}
+  .dark .svg-stuats-container .col-3{fill: #4D4B59;}
+  
+  .svg-stuats-container .col-4{fill: #cbcbca;}
+  .dark .svg-stuats-container .col-4{fill: #4D4B59;}
+
+  .svg-stuats-container .col-5{fill: #f1f2f2;}
+  .dark .svg-stuats-container .col-5{fill: #5c5a68;}
+
+  .svg-stuats-container .col-border{fill: #f6f6fb;}
+  .dark .svg-stuats-container .col-border{fill: #4e4c5a;}
+
+
+  .svg-stuats-container .col-picter{fill: #6a6a6a;}
+  .dark .svg-stuats-container .col-picter{fill: #4e4c5a;}
+
+
+
