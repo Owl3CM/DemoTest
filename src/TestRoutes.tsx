@@ -2,11 +2,13 @@ import { Route, Routes } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Demo from "./pages/Demo";
 import Items from "./pages/items/Items";
+import Posts from "./pages/posts/Posts";
 
 const _DemoRoutes = [
     //
     { path: "/", Component: Demo, title: "home" },
     { path: "/items", Component: Items, title: "items" },
+    { path: "/posts", Component: Posts, title: "posts" },
 ];
 const TestRoutes = () => {
     return (

@@ -7,7 +7,8 @@ type Props = {
 const ItemCard = ({ item }: Props) => {
     return (
         <div key={item.id} className="bg-prim p-l round-x">
-            ItemCard: {item.name}
+            <h1>ItemCard: {item.name}</h1>
+            <p>Businsess Id: {item.businessId}</p>
         </div>
     );
 };

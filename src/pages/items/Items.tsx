@@ -12,7 +12,7 @@ type Props = {};
 const Items = (props: Props) => {
     const service = React.useMemo(() => new ItemsService(), []);
     const queryBuilder = new QueryBuilder<any>({ onQueryChange: service.setQueryParmas });
-
+    
     const onInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         queryBuilder.updateQueryParams({
             id: "query",

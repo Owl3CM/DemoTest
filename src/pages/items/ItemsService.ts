@@ -56,6 +56,7 @@ export default class ItemsService extends ClientService<any, any> {
         this.data = prev;
     };
 
+
     // onItemsChanged = (newItems: any) => {
     //     console.log({ test: newItems }, "from change");
     // };
